@@ -15,6 +15,9 @@ def is_palindrome(inputs):
 
     if inputs == "":
         stillequal = False
+
+    if len(inputs) == 1:
+        stillequal = True
     return stillequal
 
 #INPUTVAR = str(input("Please Enter an string: "))
