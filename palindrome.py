@@ -13,5 +13,9 @@ def is_palindrome(inputs):
     if not isinstance(inputs, str):
         raise ValueError
 
-#INPUTVAR = int(input("Please Enter an string: "))
-#print(is_palindrome("INPUTVAR"))
+    if inputs == "":
+        stillequal = False
+    return stillequal
+
+#INPUTVAR = str(input("Please Enter an string: "))
+#print(is_palindrome(INPUTVAR))
