@@ -29,3 +29,9 @@ def test_value_called_bb():
     Given input: is_palindrome returns True if called with "bb"
     """
     assert is_palindrome("bb") == True
+
+def test_value_called_abc():
+    """
+    Given input: is_palindrome returns False if called with "abc"
+    """
+    assert is_palindrome("abc") == False
