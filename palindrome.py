@@ -10,6 +10,8 @@ def is_palindrome(inputs):
     Determines if given input variable or string is
     a palindrome.
     """
+    chardeque = Deque()
+
     if not isinstance(inputs, str):
         raise ValueError
 
@@ -18,6 +20,16 @@ def is_palindrome(inputs):
 
     if len(inputs) == 1:
         stillequal = True
+
+    if len(inputs) == 2:
+        for ch in inputs:
+            chardeque.addRear(ch)
+            while chardeque.size() > 1:
+                first = chardeque.removeFront()
+                last = chardeque.removeRear()
+        if first == last:
+            stillequal = True
+
     return stillequal
 
 #INPUTVAR = str(input("Please Enter an string: "))
