@@ -39,6 +39,16 @@ def is_palindrome(inputs):
         if first != last:
             stillequal = False
 
+    if len(inputs) == 5:
+        stillequal = True
+        for ch in inputs:
+            chardeque.addRear(ch)
+            while chardeque.size() > 1 and stillequal:
+                first = chardeque.removeFront()
+                last = chardeque.removeRear()
+        if first == last:
+            stillequal = True
+
     return stillequal
 
 #INPUTVAR = str(input("Please Enter an string: "))
