@@ -47,3 +47,9 @@ def test_value_called_toronto():
     Given input: is_palindrome returns True if called with "toronto"
     """
     assert is_palindrome("toronto") == False
+
+def test_value_mixed_case_strings():
+    """
+    Given input: is_palindrome returns True if called with "Able was I ere I saw Elba"
+    """
+    assert is_palindrome("Able was I ere I saw Elba") == True

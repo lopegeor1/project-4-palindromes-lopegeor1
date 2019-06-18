@@ -15,7 +15,9 @@ def is_palindrome(inputs):
 
     if isinstance(inputs, int):
         raise ValueError
-        
+
+    inputs = inputs.upper()
+
     chardeque = Deque()
 
     for ch in inputs:
