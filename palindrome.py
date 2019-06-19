@@ -20,8 +20,8 @@ def is_palindrome(inputs):
 
     chardeque = Deque()
 
-    for ch in inputs:
-        chardeque.addRear(ch)
+    for char in inputs:
+        chardeque.addRear(char)
 
     if  inputs == "":
         stillequal = False

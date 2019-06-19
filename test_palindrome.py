@@ -16,40 +16,40 @@ def test_null_value_input():
     """
     Given null input , validation test should return False.
     """
-    assert is_palindrome("") == False
+    assert not is_palindrome("")
 
 def test_value_called_a():
     """
     Given input: is_palindrome returns True if called with "a"
     """
-    assert is_palindrome("a") == True
+    assert is_palindrome("a")
 
 def test_value_called_bb():
     """
     Given input: is_palindrome returns True if called with "bb"
     """
-    assert is_palindrome("bb") == True
+    assert is_palindrome("bb")
 
 def test_value_called_abc():
     """
     Given input: is_palindrome returns False if called with "abc"
     """
-    assert is_palindrome("abc") == False
+    assert not is_palindrome("abc")
 
 def test_value_called_laval():
     """
     Given input: is_palindrome returns True if called with "laval"
     """
-    assert is_palindrome("laval") == True
+    assert is_palindrome("laval")
 
 def test_value_called_toronto():
     """
     Given input: is_palindrome returns True if called with "toronto"
     """
-    assert is_palindrome("toronto") == False
+    assert not is_palindrome("toronto")
 
 def test_value_mixed_case_strings():
     """
     Given input: is_palindrome returns True if called with "Able was I ere I saw Elba"
     """
-    assert is_palindrome("Able was I ere I saw Elba") == True
+    assert is_palindrome("Able was I ere I saw Elba")
