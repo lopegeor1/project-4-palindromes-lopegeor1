@@ -42,3 +42,9 @@ def test_value_called_laval():
     Given input: is_palindrome returns True if called with "laval"
     """
     assert is_palindrome("laval")
+
+def test_value_called_toronto():
+    """
+    Given input: is_palindrome returns True if called with "toronto"
+    """
+    assert not is_palindrome("toronto")
