@@ -36,4 +36,14 @@ def is_palindrome(userinput):
                 if first_char != last_char:
                     stillequal = False
 
+    elif len(userinput) == 5:
+        stillequal = True
+        for char in userinput:
+            parsedinputvalue.append(char)
+            while len(parsedinputvalue) > 1 and stillequal:
+                first_char = parsedinputvalue.popleft()
+                last_char = parsedinputvalue.pop()
+                if first_char == last_char:
+                    stillequal = True
+
     return stillequal

@@ -36,3 +36,9 @@ def test_value_called_abc():
     Given input: is_palindrome returns False if called with "abc"
     """
     assert not is_palindrome("abc")
+
+def test_value_called_laval():
+    """
+    Given input: is_palindrome returns True if called with "laval"
+    """
+    assert is_palindrome("laval")
