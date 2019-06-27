@@ -8,3 +8,8 @@ def is_palindrome(userinput):
     """
     if not isinstance(userinput, str):
         raise ValueError
+
+    if  userinput == "":
+        stillequal = False
+
+    return stillequal

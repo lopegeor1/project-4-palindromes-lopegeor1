@@ -12,3 +12,9 @@ def test_invalid_input():
     """
     with pytest.raises(ValueError):
         is_palindrome(12345)
+
+def test_null_value_input():
+    """
+    Given null input , validation test should return False.
+    """
+    assert not is_palindrome("")
