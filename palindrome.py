@@ -13,6 +13,9 @@ def is_palindrome(userinput):
 
     parsedinputvalue = deque()
 
+    for char in userinput:
+        parsedinputvalue.append(char)
+
     if  userinput == "":
         stillequal = False
 
@@ -27,23 +30,12 @@ def is_palindrome(userinput):
             if first_char != last_char:
                 stillequal = False
 
-    elif len(userinput) == 3:
-        for char in userinput:
-            parsedinputvalue.append(char)
-            while len(parsedinputvalue) > 1:
-                first_char = parsedinputvalue.popleft()
-                last_char = parsedinputvalue.pop()
-                if first_char != last_char:
-                    stillequal = False
-
-    elif len(userinput) == 5:
+    elif len(userinput) >= 3:
         stillequal = True
-        for char in userinput:
-            parsedinputvalue.append(char)
-            while len(parsedinputvalue) > 1 and stillequal:
-                first_char = parsedinputvalue.popleft()
-                last_char = parsedinputvalue.pop()
-                if first_char == last_char:
-                    stillequal = True
+        while len(parsedinputvalue) > 1 and stillequal:
+            first_char = parsedinputvalue.popleft()
+            last_char = parsedinputvalue.pop()
+            if first_char != last_char:
+                stillequal = False
 
     return stillequal
