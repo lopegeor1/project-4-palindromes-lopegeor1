@@ -1,6 +1,8 @@
 """
 palindrome.py -- Write the application code here
 """
+from collections import deque
+
 def is_palindrome(userinput):
     """
     Determines if given input variable or string is
@@ -9,10 +11,20 @@ def is_palindrome(userinput):
     if not isinstance(userinput, str):
         raise ValueError
 
+    parsedinputvalue = deque()
+
     if  userinput == "":
         stillequal = False
 
     elif len(userinput) == 1:
         stillequal = True
+
+    elif len(userinput) > 1:
+        stillequal = True
+        while len(parsedinputvalue) == 2:
+            first_char = parsedinputvalue.popleft()
+            last_char = parsedinputvalue.pop()
+            if first_char != last_char:
+                stillequal = False
 
     return stillequal
