@@ -12,4 +12,7 @@ def is_palindrome(userinput):
     if  userinput == "":
         stillequal = False
 
+    elif len(userinput) == 1:
+        stillequal = True
+
     return stillequal

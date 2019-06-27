@@ -18,3 +18,9 @@ def test_null_value_input():
     Given null input , validation test should return False.
     """
     assert not is_palindrome("")
+
+def test_value_called_a():
+    """
+    Given input: is_palindrome returns True if called with "a"
+    """
+    assert is_palindrome("a")
