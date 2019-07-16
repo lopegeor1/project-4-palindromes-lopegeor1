@@ -19,11 +19,11 @@ is_palindrome(value: str) -> bool
 
 ###  Evaluation
 
-* `(/2)` Write a function called `is_palindrome` in a Python module called
+* `(2/2)` Write a function called `is_palindrome` in a Python module called
 `palindrome.py`.
-* `(/1)` Write your tests in a module called `test_palindrome.py`
-* `(/1)` The `is_palindrome` function must accept a single parameter
-* `(/2)` The function may return either `True` or `False`, or raise a
+* `(1/1)` Write your tests in a module called `test_palindrome.py`
+* `(1/1)` The `is_palindrome` function must accept a single parameter
+* `(2/2)` The function may return either `True` or `False`, or raise a
   `ValueError`.
 * `(/4)` Use a `deque` container and its unique methods to determine if the
   value provided to the function is a palindrome
@@ -35,15 +35,15 @@ already pass without having to write additional code.
 
 **Do not write all the tests, then all the code or vice-versa.**
 
-- `(/1)` `is_palindrome` raises a `ValueError` when not provided with a value
+- `(1/1)` `is_palindrome` raises a `ValueError` when not provided with a value
   that is  an instance of `str`.
-- `(/1)` `is_palindrome` returns `False` when called with an empty string.
-- `(/1)` `is_palindrome` returns `True` if called with `"a"`.
-- `(/1)` `is_palindrome` returns `True` if called with `"bb"`.
-- `(/1)` `is_palindrome` returns `False` is called with `"abc"`.
-- `(/1)` `is_palindrome` returns `True` when called with `"laval"`.
-- `(/1)` `is_palindrome` returns `False` when called with `"toronto"`.
-- `(/1)` `is_palindrome` returns `True` when called with `"Able was I ere I saw
+- `(1/1)` `is_palindrome` returns `False` when called with an empty string.
+- `(1/1)` `is_palindrome` returns `True` if called with `"a"`.
+- `(1/1)` `is_palindrome` returns `True` if called with `"bb"`.
+- `(1/1)` `is_palindrome` returns `False` is called with `"abc"`.
+- `(1/1)` `is_palindrome` returns `True` when called with `"laval"`.
+- `(1/1)` `is_palindrome` returns `False` when called with `"toronto"`.
+- `(1/1)` `is_palindrome` returns `True` when called with `"Able was I ere I saw
   Elba"`.
 
 **Note**: this function must accept any value, not just respond to the
